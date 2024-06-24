@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenlish - Learn English with Zen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding:0;
+        
+    }
+    #menu h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #menu1 img{
+        height: 80px;
+        width: 80px;
+        display:block;
+    }
+    #menu1{
+        background-color: rgb(33, 33, 243);
+        display:flex;
+        padding-left:135px;
+    }
+   
+    #menu1 li{
+        color:rgb(210, 218, 218);
+        display: inline-block;
+        width: 160px;
+        height: 40px;
+        position: relative;
+    }
+    #menu1 a{
+        text-decoration: none;
+        color: aliceblue;
+        display: block;
+    }
+    #menu1 a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    #menu1 .menu-sub{
+        display: none;
+        left: -25px;
+        position: absolute;
+        background-color: white;
+        
+    }
+    #menu1 .menu-sub a{
+        color: black;
+    }
+    #menu li:hover .menu-sub{
+        display: block;
+       
+    }
+    .caption {
+    height: 150px;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #0d70d3;
+    text-align: center;
+  }
+.caption img{
+    width: 1000px;
+    height: auto;
+  }
+    #content1{
+        display: flex;
+        width: 100%;0
+        position: relative;
+
+    }
+    #content{
+        margin: 0 153px;
+    }
+    #content1 h2{
+        text-align: center;
+        font-size: 20px;
+    }
+    #content1_1{
+        width:750px
+    }
+    #content1_1 h2{
+        font-size: 34px;
+    }
+    #content1_1 p{
+        font-size: 18px;
+    }
+    
+     #content2 img{
+        width: 120px;
+        height:45px
+    }
+    #content2 {
+        width:270px;
+        position: absolute;
+        right:0;
+        border-left: 1px solid rgb(228, 227, 227);
+        padding-left: 45px;
+    }
+    #content2 hr{
+        height: 1.5px;
+        border-style: none;
+        background-color: rgb(226, 221, 221);
+    }
+    #content2 ul{
+        margin-left: -45px;
+    }
+    #content2 img{
+        display: block;
+        padding-top: 5px;
+        
+    }
+    #content2 li{
+        list-style-type: none; 
+        display: flex;
+        height: 75px;
+        
+    }
+    #content2 a{
+        margin-left: 15px;
+        text-decoration: none;
+        color:black;
+        display: block;
+        font-size: 12px;
+    }
+    #content2 a:hover{
+        color:rgb(50, 50, 224)
+    }
+    .container ul{
+        background-color: rgb(226, 222, 222);
+        width: 100%;
+        padding: 0 135px;
+        margin: 0;
+    }
+    .container li{
+        list-style-type: none;
+        display: inline-block;
+        width: auto;
+        text-align: center ;
+        height: 35px;
+        line-height: 35px; 
+        font-size: 13px;
+        margin-left: 20px;
+    }
+    .container a{
+        text-decoration: none;
+        color: gray;
+    }
+    .container a:hover{
+        color: black;
+    }
+    .action{margin-left: 5px;  background-color: blue;
+        border: 1px solid  blue;
+        border-radius: 10px;}
+    .action ul{
+        padding-left: 45px;
+    }
+input,
+textarea {
+    width: 90%;
+    padding:15px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+
+}
+select{
+    padding: 15px;
+    border-radius: 10px;
+    border-bottom: 1px solid white;
+}
+input::placeholder,
+textarea::placeholder {
+    color: white; 
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #70db53;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 45px;
+    margin:15px 69px;
+}
+
+    button:hover{
+    background-color: #347322;
+    
+}
+
+
+</style>
+<script>
+function dk(){
+const form = document.querySelector('form');
+const fullnameInput = document.querySelector('input[name="fullname"]');
+const phoneInput = document.querySelector('input[name="phone"]');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const fullname = fullnameInput.value.trim();
+  const phone = phoneInput.value.trim();
+
+  if (!fullname || !phone) {
+    alert('Vui lòng nhập đầy đủ họ tên và số điện thoại.');
+  }
+  
+    alert('Đăng ký thành công!');
+  
+});}
+</script>
+</head>
+<body>
+    <div id="header">
+        <div id="menu">
+            <h1>Zenlish - Học TOEIC 1 Lần Là Đạt</h1>
+           <div id="menu1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3gWrmzPphZCUdV32S0LKF9vX3IaTCG7TCMFx7vVMdw&amp;s" jsaction="VQAsE" class="sFlh5c pT0Scc" alt="Zenlish - Học TOEIC 1 Lần Là Đạt" jsname="JuXqh" style="max-width:2048px;" data-ilt="1712982146359">
+            <ul>
+                   
+                    <li><a href=""><strong>VỀ CHÚNG TÔI</strong></a>
+                        <ul class="menu-sub">
+                           <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Hệ thống cơ sở</a></li>
+                           <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Lịch Khai Giảng</a></li>
+                           <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Phương Pháp Học</a></li>
+                            <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Kho Chứng Chỉ</a></li>
+                            <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Tin Tức</a></li>
+                            <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Tuyển Dụng</a></li>
+                            <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Đăng ký tư vấn khóa học</a></li>
+                    </ul></li>
+                <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html"><strong>KHÓA HỌC</strong></a>
+                   
+                    <ul class="menu-sub">
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">FOUNĐATION TOEIC(Xây dựng nền tảng)</a></li>
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">BEGINER'S TOEIC(350+ TOEIC)</a></li>
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">CAMP BOMB TOEIC(450+ TOEIC)</a></li>
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">SUBMARINE TOEIC(700+ TOEIC)</a></li>
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">MASTER TOEIC(250+ TOEIC S&amp;W)</a></li>
+                    </ul>
+                </li>
+                <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html"><strong>TRAINER</strong></a>
+                   
+                    <ul class="menu-sub">
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Listening &amp; Reading Trainer</a></li>
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Speaking &amp; Writing Trainer</a></li>
+                    </ul>
+                </li>
+                <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html"><strong>HỌC VIÊN</strong></a>
+                       
+                    <ul class="menu-sub">
+                            <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Cảm nhận học viên</a></li>
+                            <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Kết quả học viên</a></li>
+                            <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Kho chứng chỉ</a></li>
+                        </ul>
+                </li>
+                <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html"><strong>TÀI LỆU TOEIC</strong></a>
+                   
+                    <ul class="menu-sub">
+                      <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Tài lệu hoc</a></li>
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Tài liệu ôn thi</a></li>
+                       <li><a href="file:///C:/Users/AD/AppData/Local/Temp/Rar$EXa13240.10480/thetkewed.html/KhanhLinh%20(1).html">Review đề thi</a></li>
+                    </ul>
+                </li>
+                
+            </ul></div>
+            </div>
+        </div>
+        <div class="caption">
+            <p >GIẢNG VIÊN LISTENING & READING</p>
+          </div>
+        <div class="container">
+                <ul>
+                    <li><a href="#about">Trang chủ</a></li>
+                    <li><a href="#courses">Cửa hàng</a></li>
+                    <li><a>Danh mục giảng viên </a>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <div id="content">
+        <div id="content1">
+         <h2><span style="text-align: center;">DANH SÁCH GIẢNG VIÊN LISTENING & READING</span></h2>
+        </div>
+            
+    </div>
+</body>
+</html>
