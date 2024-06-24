@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+     *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #header {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    display: flex; 
+    align-items: center; 
+    background-color: #007bff;
+    
+    }
+      #header > * {
+    margin-right: 50px; 
+    }
+    .search-container {
+        width: 400px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        background-color:#ececec;
+        border: 1px solid #ececec;
+        border-radius: 20px;
+        padding: 4px;
+    }
+    .button{ 
+         display:flex;
+    position: absolute;
+    right: 15px;}
+    .search-container input[type="text"] {
+        flex: 1;
+        font-size: 18px;
+        height: 100%;
+        padding: 4px;
+        border: none;
+        outline: none;
+        background-color:#ececec;
+        border: 1px solid #ececec;
+        border-radius: 20px;
+        padding-left:15px;
+    }
+
+    .search-container button {
+        padding: 4px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .search-icon {
+        width: 16px;
+        height: 16px;
+        fill: #000;
+    }
+
+    .login-button {
+        padding: 10px 20px;
+        background-color:#ececec;
+        color: #000;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+        height: 44px;
+    }
+
+    .register-button {
+        padding: 10px 20px;
+        background-color: green;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        height: 44px;
+    }
+    #course-books{
+    border-radius: 21px;  
+    background-color:#ececec;
+    padding: 12px 24px ; 
+    width:250px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Poppins, Roboto, Helvetica, Arial, sans-serif;
+    color: #142744;
+    } 
+    .header-menu li{
+    list-style-type: none;
+    padding: 10px;
+    
+   
+    }
+    .header-menu a{
+        text-decoration: none;
+        font-family: Poppins, Roboto, Helvetica, Arial, sans-serif;
+        color: #000;
+       
+    }
+    .sub-header-menu {
+        position:absolute;
+        padding: 10px;
+         background-color: green;
+        list-style-type: none;
+        width:300px;
+        height: 290px;
+        padding: 0; 
+        display: none;
+    }
+    .sub-header-menu li{
+        width: auto;
+        height: 45px;
+        line-height:normal;
+        padding: 20px 1em;
+        display: flex;
+     
+    }
+    .sub-header-menu li a{display: block;
+    padding-right: 25px;
+    font-size: 16px;}
+    .sub-header-menu .sub-header-menu1 {
+        position: absolute;
+        left:271px;
+        top:0;
+        height:320px;
+        width:600px;
+        background-color: #f8f8f8; 
+        display: none;
+    }
+    .sub-header-menu li:hover .sub-header-menu1{display: block;}
+    .containt{
+     display: flex;
+    padding-left: 45px;
+     padding-top:10px;
+     padding-bottom: 35px;
+    background-color: #ebeff9;}
+    .containt p{
+        font-family:Poppins, Roboto, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 36px;
+        border-radius: 10px 10px 0 0 ;
+        margin-bottom: 0;
+        background-color: #007bff;
+        font-weight: 700;
+        padding-left: 1rem !important;
+
+    }
+    .menu-side{
+        border-radius: 0 0 10px 10px;
+        background: #f8f8f8;
+        font-family: Poppins, Roboto, Helvetica, Arial, sans-serif;
+        width: 378px;
+    }
+    .menu-side li{
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 44px;
+    height: 44px;
+    padding:0 1em;
+    width:auto; 
+    list-style-type: none;
+    }
+    .menu-side a {
+        text-decoration: none;
+        color: #142744;  
+        display:block;
+    }
+    .sub-menu-side ul li{position: relative;}
+    .sub-menu-side{
+    background-color: hsla(0, 0%, 100%, .97);
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    position: absolute;
+    left:423px;
+    top: 120px;
+    width: 990px;
+    display: none;
+    height:505px;
+    }
+    .sub-menu-side  a{
+        margin-left: 25px;
+        display:inline-block;}
+    .menu-side a:hover{
+       color: #007bff;
+       font-weight: 700;
+    }
+    .menu-side li:hover .sub-menu-side {
+        display: block;
+    }
+    .sub-menu-side a:hover{color:red;
+        font-weight: 700;
+        text-decoration:red;
+   }
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.course-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.course-box {
+  width: 350px; 
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgb(25, 95, 180);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-box:hover {
+  transform: scale(1.05);
+}
+i{
+  color: rgb(67, 139, 206);
+   font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.course-box p {
+  color: #333;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: Arial;
+}
+.course-box button {
+    padding: 7px ;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid rgb(125, 194, 21);
+    border-radius: 5px;
+    color: rgb(125, 194, 21);
+
+  }
+.course-box button a{
+  padding: 7px ;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(125, 194, 21);
+}
+.course-box:hover {
+  background-color: rgb(10, 77, 232);
+ 
+}
+.course-box:hover p{
+   color: #f0f0f0;
+}
+.course-box:hover i{
+  color: aliceblue;
+}
+.course-box:hover button {
+  background-color: rgb(106, 165, 17);
+}
+.course-box:hover a{
+  color: aliceblue;
+border: white;
+}
+.footer-main{
+        display: flex;
+        font-size: 15px;
+        background-color: rgb(28, 78, 215);
+        color: aliceblue;
+        padding: 40px;
+        position: relative;
+    }
+
+    .footer-right img{
+      width: 300px;
+      height: 150px;
+    }
+    .footer-left {
+      width: 350px;
+      padding-left: 90px;
+      padding-right: 30px;
+    }
+    .footer-mid {
+      width: 350px;
+      padding-right: 30px;
+    }
+    .footer-right {
+      width: 350px;
+      
+    }
+
+</style>
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="anh6.jpd.png" alt="" style="width: 220px;height: 85px;">
+            <div class="header-menu">
+                <p id="course-books"><a href="">Khóa học & Lộ Trình</a></p>
+                <ul class="sub-header-menu" >
+                    <li><a href="">VỀ CHÚNG TÔI</a>
+                        <ul class="sub-header-menu1">
+                           <li><a href="">Hệ thống cơ sở</a></li>
+                            <li><a href="">Lịch Khai Giảng</a></li>
+                            <li><a href="">Phương Pháp Học</a></li>
+                            <li><a href="">Kho Chứng Chỉ</a></li>
+                            <li><a href="">Tin Tức</a></li>
+                            <li><a href="">Tuyển Dụng</a></li>
+                            <li><a href="">Đăng ký tư vấn khóa học</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">KHÓA HỌC</a>
+                        <ul class="sub-header-menu1"><li>
+                            <li><strong>KHÓA HỌC</strong></li>
+                            <li><a href="">FOUNĐATION TOEIC(Xây dựng nền tảng)</a></li>
+                            <li><a href="">BEGINER'S TOEIC(350+ TOEIC)</a></li>
+                            <li><a href="">CAMP BOMB TOEIC(450+ TOEIC)</a></li>
+                            <li><a href="">SUBMARINE TOEIC(700+ TOEIC)</a></li>
+                            <li><a href="">MASTER TOEIC(250+ TOEIC S&W)</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">TRAINER</a>
+                        <ul class="sub-header-menu1"><li>
+                            <li><a href>Listening & Reading Trainer</a></li>
+                             <li><a href>Speaking & Writing Trainer</a></li>
+                        </ul></li>
+                        <li><a href="">HỌC VIÊN</a>
+                        <ul class="sub-header-menu1"><li>
+                           <a href="">Cảm nhận học viên</a>
+                           <a href="">Kết quả học viên</a>
+                           <a href="">Kho chứng chỉ</a></li>
+                        </ul></li>
+                        <li><a href="">TÀI LIỆU TOEIC</a>
+                        <ul class="sub-header-menu1"><li>
+                            <li><a href="">Tài liệu học</a></li>
+                            <li><a href="">Tài liệu ôn thi</a></li>
+                            <li><a href="">Review đề thi</a></li>
+                        </ul></li>
+                       
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm khóa học">
+                <button type="submit">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+        <div id="slider">
+            <img id="img" onclick="changeIMG()" src="anh11.jpd.png" alt="">
+        </div>
+        <script>
+            var index = 1;
+            function changeIMG() {
+                var imgs = ["KL1.png", "KL2.png", "KL3.png"];
+                document.getElementById('img').src = imgs[index];
+                index++;
+                if(index == 3){
+                    index = 0;
+                }
+            }
+        </script>
+        <div class="containt">
+            <ul class="menu-side">
+                <p>Danh mục</p>
+                <li><a href="">Về Chúng Tôi</a>
+                    <ul class="sub-menu-side">
+                        <li><strong>Về Chúng Tôi</strong></li>
+                           <li><a href="Vechungtoi/hethongcoso.html">Hệ thống cơ sở</a></li>
+                           <li><a href="Vechungtoi/Lịch khai giảng.html">Lịch Khai Giảng</a></li>
+                           <li><a href="Vechungtoi/phuongphaphoc.html">Phương Pháp Học</a></li>
+                            <li><a href="Vechungtoi/khochungchi.html">Kho Chứng Chỉ</a></li>
+                            <li><a href="">Tin Tức</a></li>
+                            <li><a href="tailieu/tuyendung.html">Tuyển Dụng</a></li>
+                            <li><a href="DL_TTCSN (1)/DKTVKH.html">Đăng ký tư vấn khóa học</a></li>
+                    </ul></li>
+                <li><a href="">KHÓA HỌC</a>
+                    <ul class="sub-menu-side">
+                        <li><strong>KHÓA HỌC</strong></li>
+                       <li><a href="KhoaHoc_TTCSN/FOUNDATION TOEIC (Xây dựng nền tảng).html">FOUNĐATION TOEIC(Xây dựng nền tảng)</a></li>
+                       <li><a href="KhoaHoc_TTCSN/BEGINNER'S TOEIC (350+ TOEIC).html">BEGINER'S TOEIC(350+ TOEIC)</a></li>
+                       <li><a href="KhoaHoc_TTCSN/CAMP BOMB TOEIC (450+ TOEIC).html">CAMP BOMB TOEIC(450+ TOEIC)</a></li>
+                       <li><a href="KhoaHoc_TTCSN/SUBMARINE TOEIC (700+ TOEIC).html">SUBMARINE TOEIC(700+ TOEIC)</a></li>
+                       <li><a href="KhoaHoc_TTCSN/MASTER TOEIC (250+ TOEIC S&W).html">MASTER TOEIC(250+ TOEIC S&W)</a></li>
+                    </ul>
+                </li>
+                <li><a href="">TRAINER</a>
+                    <ul class="sub-menu-side">
+                        <li><strong>TRAINER</strong></li>
+                       <li><a href="trainer/reading and listening.html">Listening & Reading Trainer</a></li>
+                       <li><a href="trainer/speaking and writing.html">Speaking & Writing Trainer</a></li>
+                    </ul>
+                </li>
+                <li><a href="">HỌC VIÊN</a>
+                        <ul class="sub-menu-side">
+                            <li><strong>HỌC VIÊN</strong></li>
+                            <li><a href="hocvien/Camnhanhocvien.html">Cảm nhận học viên</a></li>
+                            <li><a href="hocvien/ketquahocvien.html">Kết quả học viên</a></li>
+                            <li><a href="hocvien/khochungchi.html">Kho chứng chỉ</a></li>
+                        </ul>
+                </li>
+                <li><a href="">TÀI LỆU TOEIC</a>
+                    <ul class="sub-menu-side">
+                        <li><strong>TÀI LIỆU TOEIC</strong></li>
+                      <li><a href="tailieu/tailieuhoc.html">Tài lệu học</a></li>
+                       <li><a href="tailieu/tailieuthi.html">Tài liệu ôn thi</a></li>
+                       <li><a href="tailieu/mau.html">Review đề thi</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+            </div>
+     <div class="container">
+                <div class="course-boxes">
+                  <div class="course-box">
+                    <i class="fa-solid fa-book"></i><br><br>
+                     <p>Lộ trình 450-600+</p><br><br>
+                    <button type="onclick"><a href="">Đăng ký tư vấn</a></button>
+                  </div>
+                  <div class="course-box">
+                    <i class="fa-solid fa-calendar-days"></i><br><br>
+                    <p>Lộ trình 700-900+</p><br><br>
+                    <button type="onclick"><a href="">Đăng ký tư vấn</a></button>
+                  </div>
+                  <div class="course-box">
+                    <i class="fa-solid fa-graduation-cap"></i><br><br>
+                    <p>Thành thạo 4 kỹ năng</p><br><br>
+                    <button type="onclick"><a href="">Đăng ký tư vấn</a></button>
+         </div>
+        </b<br>
+        </br>
+     <div class="footer-main" >
+        <div class="footer-left">
+            TRUNG TÂM ANH NGỮ ZENLISH <br> <hr><br>
+     <b>Cơ sở Kim Mã:</b> Số 22A ngách 25, ngõ 629 Kim Mã, phường Ngọc Khánh, Ba Đình, Hà Nội - SĐT: 0985.276.822 <br><br>
+     
+     <b>Cơ sở Hai Bà Trưng:</b> Số 5, ngõ 128 phố Vọng, Hai Bà Trưng, Hà Nội - SĐT: 0973.535.769 <br><br>
+      
+     <b>Cơ sở Hà Đông:</b> Số 56, ngõ 54 Nguyễn Khuyến, Văn Quán, Hà Đông - SĐT: 0375.065.806 <br><br>
+      
+     <b>Cơ sở Tây Sơn:</b> 41 Tây Sơn, Đống Đa , Hà Nội - SĐT: 0973.535.769 <br><br>
+      
+     <b>Cơ sở Nam Từ Liêm:</b> 44 Nguyễn Hoàng, Nam Từ Liêm, Hà Nội - SĐT: 0375.065.806
+         </div>
+         <div class="footer-mid">
+             CÔNG TY TNHH TƯ VẤN GIÁO DỤC VÀ XÚC TIẾN THƯƠNG MẠI ZENLISH <br> <hr><br>
+             <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;<b>0988.202.904</b> <br><br>
+             <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<b><a href="">infor@zenlish.edu.vn</a></b> <br><br>
+     <b>THỜI GIAN LÀM VIỆC</b> <br><br>
+     Sáng: 08:00 - 12:00 <br>
+                               
+     Chiều: 14:00 - 18:00 <br>
+     
+     Tối: 18:00 - 21:45 <br>
+    
+         </div>
+         <div class="footer-right">
+             FANPAGE <hr><br>
+                 <a href="https://www.facebook.com/zenlish.edu.vn?ref=embed_page"><img src="footer_TTCSN/footer-anh1.png" alt=""></a> <br>
+                <br>
+                 <a href="https://www.facebook.com/LifeAtZenlish?ref=embed_page"><img src="footer_TTCSN/footer-anh2.png" alt=""></a>
+         </div>
+         </div>
+         
+      </div>
+        
+</body>
+</html>
