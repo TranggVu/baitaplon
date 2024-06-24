@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-up{
+    padding: 0px;
+}
+.zenlish-slogan-text {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.caption {
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+    height: 10%;
+    padding: 8%;
+    min-height: 200px;
+    background-image: url(https://zenlishtoeic.vn/wp-content/uploads/2023/03/zenlish-thiet-ke-chua-co-ten-2.png);
+}
+
+.menu-zenlish-1{
+    display:inline-block;
+}
+.container{
+    padding: 1%;
+    position: relative;
+}
+.col-inner .box-text {
+    justify-content: center;
+    top:5%;
+    bottom:5%;
+}
+#content2 {
+    display: float;
+}
+#content2 img{
+    width: 120px;
+    height:45px
+}
+#content2 {
+    width:270px;
+    position: absolute;
+    right:2%;
+    top:2%;
+    border-left: 1px solid rgb(228, 227, 227);
+    padding-left: 45px;
+}
+#content2 hr{
+    height: 1.5px;
+    border-style: none;
+    background-color: rgb(226, 221, 221);
+}
+#content2 ul{
+    margin-left: -45px;
+}
+#content2 img{
+    display: block;
+    padding-top: 5px;
+    
+}
+#content2 li{
+    list-style-type: none; 
+    display: flex;
+    height: 75px;
+    
+}
+#content2 a{
+    margin-left: 15px;
+    text-decoration: none;
+    color:black;
+    display: block;
+    font-size: 12px;
+}
+#content2 a:hover{
+    color:rgb(50, 50, 224)
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+.footer ul li{
+    display:inline-block;
+}
+.footer-primary {
+    background-color: rgb(47, 46, 46);
+    color: darkgray;
+    padding:5px;;
+    width: 100%;
+    text-align: center;
+}
+#menu-zenlish-1 a {
+    color: darkgray;
+  
+}
+.box-image{
+    display:flex;
+    width: 70%;
+}
+.image-cover {
+    flex:1;
+}
+.box-text {
+    flex:1;
+}
+
