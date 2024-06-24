@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: hsl(0, 0%, 20%);
+}
+ p {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin:  0  auto;
+    color: rgb(28, 78, 215);
+    background-color: aliceblue;
+    margin-bottom: 30px;
+    border: 4px double rgb(45, 28, 156);
+}
+.id{
+    display: flex;   
+    font-size: 12px;
+    background-color: rgb(210, 218, 218);
+    padding: 5px;
+}
+.id a{
+    text-decoration: none;
+    margin-left: 60px ;
+}
+.kh-top {
+    display: flex;
+}
+.kh-top .i{
+    padding: 8px;
+    padding-left: 40px;
+}
+.kh-top nav{
+    padding: 8px;
+    margin-left: 400px;
+    font-size: 20px;
+}
+.header1 {
+    height: 150px;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(35, 64, 255);
+    color: #fff;
+}
+
+.kh-tt{
+    display: flex;
+}
+
+.lydo{
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 30px;
+    font-size: 13px;
+}
+.lydo p {
+    background-color: rgb(35, 64, 255);
+    color: #ffffff;
+}
+.anh-lydo{
+    width: 40%;    
+    background-color: rgb(196, 206, 255);   
+}
+
+.kh-loiich{
+    display: flex;
+    background-color: rgb(35, 64, 255);
+    padding: 20px;
+}
+.kh-loiich li{
+    color: #ffffff;
+}
+.anh-loiich{
+    width: 50%;
+    padding-left: 100px;
+}
+.loiich{
+    padding-right: 150px;
+    padding-left: 30px;
+    font-size: 13px;
+}
+.kh-daura1 {
+    margin: 0 auto;
+    width: 70%;
+}
+.kh-daura1 p {
+    background-color: rgb(35, 64, 255);
+    color: #ffffff;
+}
+.daura1main {
+    display: flex;
+    font-size: 13px;
+   
+}
+.daura1l {
+    padding-right: 30px;
+     width: 70%;
+}
+.daura1r {
+    width: 70%;
+}
+.kh-daura2{
+    display: flex;
+    background-color: rgb(35, 64, 255);
+    padding: 30px;
+}
+
+.daura2 {
+    width: 50%;
+    font-size: 13px;
+    padding-left: 100px;
+    padding-right:30px ;
+}
+.daura22 {
+    color: #ffffff;
+}
+.giangvien p {
+    background-color: rgb(35, 64, 255);
+    color: #ffffff;
+}
+.kh-thamdu{
+    background-color: rgb(35, 64, 255);
+    text-align: center;
+    padding: 20px;
+}
+.thamdu1 i{
+    font-size: 55px;
+}
+.thamdu {
+    display: flex;
+}
+.thamdu1{
+    width: 20%;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(53, 202, 202);
+    color: #ffffff;
+}
+.contentt p{
+    padding: 10px;
+}
