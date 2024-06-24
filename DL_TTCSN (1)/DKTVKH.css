@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+.container-up {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .caption {
+    height: 150px;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #0d70d3;
+  }
+.caption img{
+    width: 1000px;
+    height: auto;
+  }
+
+.id{
+    display: flex;   
+    font-size: 12px;
+    background-color: rgb(210, 218, 218);
+    padding: 5px;
+}
+.id a{
+    text-decoration: none;
+    margin-left: 60px ;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.head{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(28, 78, 215);
+    background-color: aliceblue;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 3px solid rgb(45, 28, 156);
+}
+.image-container {
+    width: 35%;
+    float: right;
+    margin-top: 50px;
+    margin-right: 190px;
+}
+
+/* .image-container img {
+    width: 100%;
+    height: auto;
+} */
+
+.content {
+    width: 43%;
+    float: left;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 70px;
+    background-color: rgb(68, 123, 225);
+    background-image: url("anh2.jpg");
+    background-size: cover;
+}
+
+form {
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    background-color: #70db53;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #347322;
+}
+
+.footer img{
+    padding-top: 70px;
+}

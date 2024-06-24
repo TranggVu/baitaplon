@@ -1,0 +1,82 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.course-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.course-box {
+  width: 350px; 
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgb(25, 95, 180);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-box:hover {
+  transform: scale(1.05);
+}
+i{
+  color: rgb(67, 139, 206);
+   font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.course-box p {
+  color: #333;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: Arial;
+}
+.course-box button {
+    padding: 7px ;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid rgb(125, 194, 21);
+    border-radius: 5px;
+    color: rgb(125, 194, 21);
+
+  }
+.course-box button a{
+  padding: 7px ;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(125, 194, 21);
+}
+.course-box:hover {
+  background-color: rgb(10, 77, 232);
+ 
+}
+.course-box:hover p{
+   color: #f0f0f0;
+}
+.course-box:hover i{
+  color: aliceblue;
+}
+.course-box:hover button {
+  background-color: rgb(106, 165, 17);
+}
+.course-box:hover a{
+  color: aliceblue;
+border: white;
+}
+
